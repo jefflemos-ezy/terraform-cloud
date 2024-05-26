@@ -1,6 +1,16 @@
-resource "local_file" "testing" {
+resource "local_file" "first_file" {
   content  = var.resource_content
-  filename = "foo.bar"
+  filename = "first"
+}
+
+resource "local_file" "second_file" {
+  content  = var.resource_content
+  filename = "second"
+}
+
+resource "local_file" "third_file" {
+  content  = var.resource_content
+  filename = "third"
 }
 
 variable "resource_content" {
