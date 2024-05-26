@@ -5,5 +5,5 @@ resource "local_file" "testing" {
 
 variable "resource_content" {
   type = string
-  default = "this is the content of the file"
+  default = "this is the new content of the file"
 }
