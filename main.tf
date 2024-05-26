@@ -8,10 +8,6 @@ resource "local_file" "second_file" {
   filename = "second"
 }
 
-resource "local_file" "third_file" {
-  content  = var.resource_content
-  filename = "third"
-}
 
 variable "resource_content" {
   type = string
